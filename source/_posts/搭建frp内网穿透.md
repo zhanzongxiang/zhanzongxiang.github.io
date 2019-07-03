@@ -3,8 +3,8 @@ title: 搭建frp内网穿透
 date: 2019-07-02 09:08:51
 tags:
 ---
-## 概述
-## 环境
+### 概述
+### 环境
 1：云服务器一台
 2：内网服务器一台
 3：Frp，可以到[这里](https://link.zhihu.com/?target=https%3A//github.com/fatedier/frp/releases)下载。
@@ -165,6 +165,7 @@ protocol = tcp
 需要注意的是：上面用到的端口都需要服务器端已经开放这些端口，否则不能正常启动服务，我用的是阿里云服务器，开启对应的端口可以在添加安全组里添加对应的端口。
 
 ### 内网穿透实现web服务
+
 前面实现了ssh的连接，接下来实现访问内网web服务。还是需要求改服务器的配置文件，在之前的基础上增加一条配置：
 ``` bash
 vhost_http_port = 8003
@@ -180,3 +181,9 @@ custom_domains = xxx.xxxx.xxxx
 其中local_port是监视本地的http服务端口（也就是http服务占用的端口），custom_domains为你公网服务器的IP或者已解析的域名。
 
 再启动服务器和内网的Frp服务就可以通过custom_domains:vhost_http_port的方式来访问你本地的http服务了。
+
+### 遇到的一些问题
+
+如果你使用的是云服务器，请把Frp使用到的端口全部加入出入白名单。否则会出现端口连接报错问题。
+
+如果开启了防火墙，请把所有Frp使用到的端口全部加入出入规则当中。否则会出现端口连接报错问题。
