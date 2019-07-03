@@ -22,7 +22,7 @@ VPN的功能是：在公用网络上建立专用网络，进行加密通讯。�
 
 打开安装包进行安装，客户端跟服务器安装方式一样，都需要安装
 
-![](file:///your file directory/img.jpg)
+![](../_images/openvpn/1.png)
 
 点击下一步
 
