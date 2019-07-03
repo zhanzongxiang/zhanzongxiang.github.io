@@ -22,31 +22,31 @@ VPN的功能是：在公用网络上建立专用网络，进行加密通讯。�
 
 打开安装包进行安装，客户端跟服务器安装方式一样，都需要安装
 
-![](../_images/openvpn/1.png)
+![](搭建openvpn/1.png)
 
 点击下一步
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/2.png)
 
 下面两个选项默认不勾选，我们需要勾选不然安装完无法命令行制作证书操作
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/3.png)
 
 选择安装目录
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/4.png)
 
 安装完成
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/5.png)
 
 安装完成后系统会多出一张网卡TAP的 “本地连接2
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/6.png)
 
 要想客户端能够通过服务端上网需要调整服务端本地网卡共享
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/7.png)
 
 本地连接需要跟v9虚拟网卡做成桥接方可访问网络
 
@@ -89,7 +89,7 @@ TXT_DB error number 2
 
 生成后文件夹下产生如下文件
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/8.png)
 
 ### 服务端配置-生成相关证书配置
 
@@ -152,7 +152,7 @@ verb 4
 
 配置文件如下
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/9.png)
 
 ### 修改注册表
 
@@ -200,13 +200,13 @@ verb 4
 
 配置文件如下
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/10.png)
 
 ### 查看分配的ip及路由状态
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/11.png)
 
-![](file:///your file directory/img.jpg)
+![](搭建openvpn/12.png)
 
 以上就是安装的全部流程。
 
