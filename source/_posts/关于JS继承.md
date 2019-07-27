@@ -1,7 +1,7 @@
 ---
 title: 关于 JS 的继承
 date: 2019-07-25 18:01:29
-tags: "JavaScript" "前端开发"
+tags: "JavaScript"
 ---
 
 ## 序言
